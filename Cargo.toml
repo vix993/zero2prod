@@ -17,6 +17,11 @@ regex = "1.5.5"
 sqlx = { version = "0.5.7", features = ["runtime-actix-rustls", "macros", "postgres","uuid","chrono","migrate" ], default-features = false }
 uuid = { version = "0.8.1", features = ["v4"] }
 chrono = "0.4.15"
+env_logger = "0.9"
+log = "0.4"
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
+tracing-bunyan-formatter = "0.3"
 
 [dev-dependencies]
 reqwest = "0.11"
